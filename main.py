@@ -49,13 +49,13 @@ class TestCalculoIRSeteCasos(unittest.TestCase):
         print("Executando: test_CE5_salario_na_faixa_de_aliquota_27_5")
         self.assertAlmostEqual(calcular_ir(5000.00), 479.00, places=2)
 
-    def test_CI1_salario_com_valor_negativo(self):
-        """Testa o caso CI1: Salário com valor negativo."""
+    def test_CE6_salario_com_valor_negativo(self):
+        """Testa o caso CE6: Salário com valor negativo."""
         print("Executando: test_CI1_salario_com_valor_negativo")
         self.assertEqual(calcular_ir(-100.00), "Erro: Salário não pode ser negativo.")
 
-    def test_CI2_entrada_com_valor_nao_numerico(self):
-        """Testa o caso CI2: Entrada com valor não numérico."""
+    def test_CE7_entrada_com_valor_nao_numerico(self):
+        """Testa o caso CE7: Entrada com valor não numérico."""
         print("Executando: test_CI2_entrada_com_valor_nao_numerico")
         self.assertEqual(calcular_ir("abc"), "Erro: Entrada deve ser numérica.")
 
